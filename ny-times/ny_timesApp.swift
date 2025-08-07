@@ -15,16 +15,14 @@ struct ny_timesApp: App {
         }
     }
 }
-// 4️⃣  ContentView – works exactly like your old one
-// ────────────────────────────────────────────────────────────────
 
 struct ContentView: View {
     @StateObject private var viewModel = ArticleListViewModel()
 
     var body: some View {
         NavigationView {
-            ArticleListView()                       // your existing UI
-                .environmentObject(viewModel)       // nothing else changes
+            ArticleListView()
+                .environmentObject(viewModel)
         }
         .navigationViewStyle(.stack)
     }

@@ -5,7 +5,7 @@
 //  Created by Mohamed Bakr on 07/08/2025.
 //
 
-import UIKit
+import Foundation
 
 struct Article: Codable, Identifiable {
     let uri: String
@@ -56,5 +56,45 @@ struct Article: Codable, Identifiable {
             return formatter.string(from: date)
         }
         return publishedDate
+    }
+}
+
+// MARK: - Article helpers for unit test
+extension Article: Equatable {
+    public static func == (lhs: Article, rhs: Article) -> Bool { lhs.id == rhs.id }
+}
+
+extension Article {
+    static func stub(
+        id: Int = 0,
+        title: String = "Stub Title",
+        abstract: String = "Stub Abstract",
+        section: String = "Tech",
+        date: String = "2025-08-07"
+    ) -> Self {
+        Article(
+            uri: "nyt://article/\(id)",
+            url: "https://example.com/article\(id)",
+            id: id,
+            assetId: id,
+            source: "NYTimes",
+            publishedDate: date,
+            updated: date,
+            section: section,
+            subsection: "",
+            nytdsection: section,
+            adxKeywords: "",
+            column: nil,
+            byline: "By Stub",
+            type: "Article",
+            title: title,
+            abstract: abstract,
+            desFacet: [],
+            orgFacet: [],
+            perFacet: [],
+            geoFacet: [],
+            media: [],
+            etaId: 0
+        )
     }
 }
