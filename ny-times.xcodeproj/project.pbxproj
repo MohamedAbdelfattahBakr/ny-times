@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		60841E2A2E45073400EFECBF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 60841E292E45073300EFECBF /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		60D8C5792E44D57D00103873 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60841E292E45073300EFECBF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		60D8C56B2E44D57C00103873 /* ny-times.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ny-times.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D8C5782E44D57D00103873 /* ny-timesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ny-timesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D8C5822E44D57D00103873 /* ny-timesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ny-timesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +84,7 @@
 				60D8C57B2E44D57D00103873 /* ny-timesTests */,
 				60D8C5852E44D57D00103873 /* ny-timesUITests */,
 				60D8C56C2E44D57C00103873 /* Products */,
+				60841E292E45073300EFECBF /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -236,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60841E2A2E45073400EFECBF /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
