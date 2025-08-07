@@ -11,8 +11,9 @@ This feature is designed for scalability, MVVM layering, and a clean user experi
 - Time segment (1 Day, 7 Days, 30 Days) and article type filters
 - Sort & filter using modal sheets with clean UI
 - Detail view with smooth transition using `matchedGeometryEffect`
-- Graceful error handling and loading states
+- Graceful error handling and loading states using shimmer loading
 - Organized with `Domain`, `Presentation`, `Repository`, `ViewModels`, and `Support`
+                                    
 
 ---
  ## 📁 Module Structure
@@ -27,7 +28,7 @@ This feature is designed for scalability, MVVM layering, and a clean user experi
                                         │   │   │   └── SortOption.swift
                                         │   │   ├── Repository/
                                         │   │   │   └── ArticleRepository.swift
-                                        │   │   └── UseCases/   # [Optionally place use case services here]
+                                        │   │   └── UseCases/
                                         │
                                         │   ├── Presentation/
                                         │   │   ├── ArticleCardView.swift
